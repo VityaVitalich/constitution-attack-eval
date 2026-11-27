@@ -1,0 +1,3 @@
+openai>=1.40
+# to load models in-process (--backend vllm):
+# vllm>=0.9
