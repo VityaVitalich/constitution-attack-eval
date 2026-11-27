@@ -22,7 +22,7 @@ them are invented.
 ## Quick start
 
 ```bash
-git clone <this repo> && cd constitution-attack-eval
+git clone https://github.com/VityaVitalich/constitution-attack-eval.git && cd constitution-attack-eval
 pip install -r requirements.txt          # the openai client; add vllm to load models locally
 export OPENROUTER_API_KEY=...            # for the judge
 
@@ -142,3 +142,7 @@ extracted from. The `vllm` backend is the generation code of those runs moved
 into this repo; it has not been run on a GPU from this repo yet, so start with
 the smoke run and check that few replies are cut at the token limit
 (`n_replies_cut_at_max_tokens` in `result.json`; we see 3 to 12% on small models).
+
+## License
+
+MIT, for the code and the data (see `LICENSE`).
